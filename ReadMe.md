@@ -1,21 +1,26 @@
----
-title: "ReadMe.md"
-output: html_document
----
 This markdown file explains how the script works to input raw data and output a tidy data set.
 
 This repo contains the R script called 'run_analysis.R' that does the following:
+
 1. Read raw data from both train and test datasets and treat them for further analysis.
+
   a. Read X_train.txt
+  
   b. Read Y_train.txt
+  
   c. Read features.txt
+  
   d. Read Subject_train.txt
+  
   e. Add column names in X_train data from features
+  
   f. Apply activity labels to activity numbers and add them to the X_train data
+  
   g. Add subject identifiers to X_train data from Subject_train data
+  
   h. Do steps a to g for X_test data
   
-2, Combine the X_train and X_test data using rbind() to create X_tt dataset
+2. Combine the X_train and X_test data using rbind() to create X_tt dataset
 
 3. Aggregate (mean) each of the 561 variables by Activity and Subject using aggregate.data.frame
 

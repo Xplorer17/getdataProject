@@ -4,16 +4,16 @@
 
 ##############---------Read train data-------------################
 
-X_train <- read.table("E:/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/train/X_train.txt")
+X_train <- read.table("getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/train/X_train.txt")
 
 
-y_train <- read.table("E:/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/train/y_train.txt")
+y_train <- read.table("getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/train/y_train.txt")
 
 
-features <- read.table("E:/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/features.txt", stringsAsFactors = F)
+features <- read.table("getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/features.txt", stringsAsFactors = F)
 
 
-subject_train <- read.table("E:/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/train/subject_train.txt")
+subject_train <- read.table("getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/train/subject_train.txt")
 
 
 colnames(X_train) <- features$V2
@@ -26,13 +26,13 @@ X_train$Subject <- subject_train$V1
 
 ##############---------Read test data-------------################
 
-X_test <- read.table("E:/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/test/X_test.txt")
+X_test <- read.table("getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/test/X_test.txt")
 
 
-y_test <- read.table("E:/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/test/y_test.txt")
+y_test <- read.table("getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/test/y_test.txt")
 
 
-subject_test <- read.table("E:/getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/test/subject_test.txt")
+subject_test <- read.table("getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/test/subject_test.txt")
 
 
 colnames(X_test) <- features$V2
