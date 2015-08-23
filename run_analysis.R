@@ -61,4 +61,4 @@ names(e1) <- gsub("Group.2","Subject", names(e1))
 
 
 ## Write the tidy data set into tidy_data.txt
-write.table(x = e1, file = "tidy_data.txt", row.names = F)
+write.table(x = e1, file = "tidy_data.txt", row.names = FALSE)
